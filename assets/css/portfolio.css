@@ -6,15 +6,15 @@ body {
 :root{
   --text1:#F92C85;
   --text2: #1ed760;
-  --bg1: #6BB77B;
+  --bg1: #143446
   --bg2: #282828;
   --background: #121213;
 }
 .dark-mode{
-  --text1: #F92C85;
+  --text1: #1ed760;
   --text2: #47b2e4;
   --bg1: #282828;
-  --bg2: #6BB77B;
+  --bg2: #143446;
   --background: #0606ec;
 }
 a {
