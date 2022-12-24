@@ -393,9 +393,8 @@ h6 {
   width: 100%;
   height: 80vh;
   background-image: url(../img/beraki.png);
-  background-size: cover;
   min-height: 100vh;
-  background-position: center;
+  background-size: 50% 50%;
 }
 #hero.night{
   background-image: url(/assets/img/spikesa.jpg);
