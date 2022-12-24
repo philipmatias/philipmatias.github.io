@@ -6,8 +6,8 @@ body {
 :root{
   --text1:#47b2e4;
   --text2: #1ed760;
-  --bg2: #282828;
   --bg1: #143446;
+  --bg2: #282828;
   --background: #121213;
 }
 .dark-mode{
