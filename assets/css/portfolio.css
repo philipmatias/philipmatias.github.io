@@ -9,6 +9,7 @@ body {
   --bg1: #143446;
   --bg2: #282828;
   --background: #121213;
+  --progress: #F92C85;
 }
 .dark-mode{
   --text1: #1ed760;
@@ -888,7 +889,7 @@ section {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  box-shadow: 3px 0px 11px 0px var(--text2);
+  box-shadow: 3px 0px 11px 2px var(--text2);
   background-color: var(--text2);
   border-radius: 10px
 }
