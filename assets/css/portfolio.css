@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,200;0,500;0,700;0,900;1,100&family=Open+Sans:wght@300;400;600&family=Roboto:wght@300;400;700&display=swap');
 body {
-  font-family: "Open Sans", sans-serif;
   color: #444444;
+  font-family: "Open Sans", sans-serif;
 }
 :root{
   --text1:#47b2e4;
@@ -1280,7 +1280,7 @@ i.fa-solid .collapsed {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50px;
+  border-radius: 10px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -1333,7 +1333,7 @@ iframe{
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: var(--text1);
+  background: #3b5998;
   color: var(--text2);
 }
 
@@ -1504,13 +1504,47 @@ footer {
 }
 
 footer span a {
-  color: var(--text1);
+  color: var(--progress);
   text-decoration: none;
 }
 
 footer span a:hover {
   text-decoration: underline;
   color: var(--text1);
+}
+.idoo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: 'MuseoModerno', cursive;
+}
+img.ido{
+  width: 50px;
+}
+.wrapper{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.wrapper .icon span{
+  color: var(--text2);
+  font-size: 20px;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: var(--bg2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  margin-left: 15px;
+  cursor: pointer;
+}
+.wrapper .icon span:hover{
+  background: #3b5998;
+  color: var(--text2);
 }
 
 @media (max-width: 768px) {
