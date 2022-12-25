@@ -1562,4 +1562,15 @@ img.ido{
   #footer .credits {
     padding-top: 4px;
   }
+  .idoo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    }
+    .wrapper .icon span{
+      width: 34px;
+      height: 34px;
+      display: flex;
+    }
 }
