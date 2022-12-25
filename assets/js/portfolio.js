@@ -254,6 +254,29 @@
 
 })()
 
+//clock
+ function updateClock() {
+  var currentTime = new Date();
+  var hours = currentTime.getHours();
+  var minutes = currentTime.getMinutes();
+  var seconds = currentTime.getSeconds();
+
+  var ampm = "AM";
+  if (hours > 12) {
+    hours -= 12;
+    ampm = "PM";
+  }
+
+  var timeString = hours + ":" + minutes + ":" + seconds + " " + ampm;
+  document.querySelector('.time').innerHTML = timeString;
+}
+
+setInterval(updateClock, 1000);
+
+
+
+
+
 
 //darkmode
 // $("switch").click(function(){

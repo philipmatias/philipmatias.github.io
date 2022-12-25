@@ -521,6 +521,15 @@ h6 {
   background-size: cover;
 }    */
 
+#clock {
+  font-size: clamp(1.5625rem, 0.9885rem + 2.449vw, 3.4375rem);
+  width: 320px;
+  height: 150px;
+  color: var(--progress);
+  line-height: 150px;
+  font-weight: 700;
+  font-family: 'MuseoModerno', cursive;
+}
 #hero .container {
   padding-top: 72px;
 }
@@ -580,19 +589,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', end
   font-size: 24px;
 }
 
-#hero .btn-get-started {
-  font-family: "Jost", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 10px 28px 11px 28px;
-  border-radius: 50px;
-  transition: 0.5s;
-  margin: 10px 0 0 0;
-  color: #fff;
-  background: #47b2e4;
-}
+
 
 #hero .btn-get-started:hover {
   background: #209dd8;
@@ -629,7 +626,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', end
     height: 100vh;
     text-align: center;
   }
-
   #hero .animated {
     -webkit-animation: none;
     animation: none;
@@ -649,7 +645,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', end
     font-size: 28px;
     line-height: 36px;
   }
-
   #hero h2 {
     font-size: 18px;
     line-height: 24px;
@@ -664,6 +659,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', end
 @media (max-width: 575px) {
   #hero .hero-img img {
     width: 80%;
+  }
+  #clock {
+    margin-left: -28%;
   }
 
   #hero .btn-get-started {
