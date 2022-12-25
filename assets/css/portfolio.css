@@ -1422,7 +1422,7 @@ iframe{
   color: var(--text1);
   font-family: 'MuseoModerno', cursive;
   border-color: transparent;
-  border-bottom: 2px solid var(--text2) ;
+  border-bottom: 1.6px solid var(--text2);
 }
 
 .contact .php-email-form input:focus,
