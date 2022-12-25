@@ -833,7 +833,7 @@ section {
 .why-us .accordion-list p {
   margin-bottom: 0;
   padding: 10px 0 0 0;
-  color: var(--progress);
+  color: var(--text1);
   font-family: 'MuseoModerno', cursive;
 }
 
@@ -1006,7 +1006,7 @@ i.fa-solid {
   margin-bottom: 0;
   padding: 10px 0 0 0;
   font-family: 'MuseoModerno', cursive;
-  color: var(--progress);
+  color: var(--text1);
 }
 
 .faq .faq-list .icon-show {
