@@ -522,13 +522,14 @@ h6 {
 }    */
 
 #clock {
-  font-size: clamp(1.5625rem, 0.9885rem + 2.449vw, 3.4375rem);
-  width: 320px;
-  height: 150px;
-  color: var(--progress);
-  line-height: 150px;
-  font-weight: 700;
   font-family: 'MuseoModerno', cursive;
+    margin-top: 5%;
+    color: var(--progress);
+    position: relative;
+    display: flex;
+    text-transform: uppercase;
+    font-size: clamp(1.875rem, 1.1097rem + 3.2653vw, 4.375rem);
+    font-weight: 700;
 }
 #hero .container {
   padding-top: 72px;
@@ -659,9 +660,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', end
 @media (max-width: 575px) {
   #hero .hero-img img {
     width: 80%;
-  }
-  #clock {
-    margin-left: -28%;
   }
 
   #hero .btn-get-started {
