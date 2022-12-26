@@ -541,7 +541,7 @@ h6 {
 
 #clock {
   font-family: 'MuseoModerno', cursive;
-    margin-top: 5%;
+    margin-top: 10%;
     background: linear-gradient(to right, var(--text1), var(--text2), var(--progress) );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -557,7 +557,7 @@ h6 {
 
 #hero h1 {
     font-family: 'MuseoModerno', cursive;
-    margin-top: -30%;
+    margin-top: -25%;
     position: relative;
     display: flex;
     text-transform: uppercase;
