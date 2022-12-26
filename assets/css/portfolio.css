@@ -1603,6 +1603,8 @@ iframe {
   padding: 56px;
   border-radius: 10px;
   background: var(--bg1);
+  border-top: 2px solid var(--text2);
+  border-bottom: 2px solid var(--text2);
 }
 
 .contact .info i {
@@ -1641,6 +1643,8 @@ iframe {
 
 .contact .php-email-form {
   width: 100%;
+  border-top: 2px solid var(--text2);
+  border-bottom: 2px solid var(--text2);
   background: var(--bg1);
   padding: 20px;
   border-radius: 10px;
