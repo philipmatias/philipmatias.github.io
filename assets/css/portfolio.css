@@ -92,7 +92,6 @@ h6 {
   left: calc(50% - 30px);
   border: 7px dotted var(--text2);
   border-top-color: var(--progress);
-  box-shadow: 3px 0px 11px 2px var(--progress);
   border-bottom-color: var(--text1);
   border-left-color: var(--text2);
   border-radius: 50%;
