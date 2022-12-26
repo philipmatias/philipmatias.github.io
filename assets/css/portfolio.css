@@ -203,6 +203,9 @@ h6 {
   color: var(--text2);
   line-height: 0;
 }
+.back-to-top:hover{
+  background-color: var(--progress);
+}
 
 
 .back-to-top.active {
@@ -1712,7 +1715,7 @@ img.ido{
   cursor: pointer;
 }
 .wrapper .icon span:hover{
-  background: #3b5998;
+  background: var(--progress);
   color: var(--text2);
 }
 
