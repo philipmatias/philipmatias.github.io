@@ -1595,24 +1595,23 @@ iframe {
   height: 24px;
   margin: 0 10px -6px 0;
   border: 3px solid #18d26e;
-  border-top-color: #eee;
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
 }
 
 .contact .php-email-form input,
 .contact .php-email-form textarea {
-  border-radius: 0;
   box-shadow: none;
   font-size: 14px;
   border-radius: 10px;
-  background: var(--background);
-  border: 2px solid var(--text2);
+  background: var(--bg2);
+  border: 1.5px solid var(--text2);
 }
 
 .contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
-  border: 2px solid var(--progress);
+  border: 1.5px solid var(--progress);
+  color: var(--text1);
 }
 
 .contact .php-email-form input {
@@ -1623,6 +1622,7 @@ iframe {
 
 .contact .php-email-form textarea {
   padding: 10px 12px;
+  color: var(--progress);
 }
 
 .contact .php-email-form button[type=submit] {
