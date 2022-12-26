@@ -524,7 +524,9 @@ h6 {
 #clock {
   font-family: 'MuseoModerno', cursive;
     margin-top: 5%;
-    color: var(--progress);
+    background: linear-gradient(to right, var(--text1), var(--text2), var(--progress) );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     position: relative;
     display: flex;
     text-transform: uppercase;
@@ -596,15 +598,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', end
   background: #209dd8;
 }
 
-#hero .btn-watch-video {
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-  transition: 0.5s;
-  margin: 10px 0 0 25px;
-  color: #fff;
-  line-height: 1;
-}
+
 
 #hero .btn-watch-video i {
   line-height: 0;
