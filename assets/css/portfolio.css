@@ -1707,7 +1707,6 @@ img.ido{
   float: left;
   width: 44px;
   height: 44px;
-  background: var(--bg2);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1716,10 +1715,38 @@ img.ido{
   margin-left: 15px;
   cursor: pointer;
 }
-.wrapper .icon span:hover{
-  background: var(--progress);
-  color: var(--text2);
+i.fa-brands{
+  color: #ffffff;
+font-size: 30px;
+  float: left;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
 }
+i.fa-brands.fa-facebook-f{
+  background-color: #c53c3c;
+  background: -moz-linear-gradient(top, #3e6ccf, #3e6ac7);
+  background: -ms-linear-gradient(top, #4372da, #255ed8);
+  background: -webkit-linear-gradient(top, #2f62d1, #2f59b3);
+  border: 1px solid #2b4170;
+}
+i.fa-brands.fa-instagram{
+  background: -webkit-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), -webkit-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+    background: -moz-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), -moz-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+    background: -ms-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), -ms-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+    background: -o-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), -o-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+    background: radial-gradient(circle farthest-corner at 32% 106%, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), linear-gradient(135deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+}
+i.fa-brands.fa-tiktok{
+  background-color: #010101;
+}
+i.fa-brands.fa-github{
+  background-color: #333333;
+}
+
 
 @media (max-width: 768px) {
   #footer .footer-bottom {
