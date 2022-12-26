@@ -1697,16 +1697,20 @@ iframe {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
-  border-radius: 4px;
+  border-radius: 10px;
+  background: var(--background);
+  border: 2px solid var(--text2);
 }
 
 .contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
-  border-color: #ffc451;
+  border: 2px solid var(--progress);
 }
 
 .contact .php-email-form input {
   height: 44px;
+  background-color: var(--bg2);
+  color: var(--text1);
 }
 
 .contact .php-email-form textarea {
@@ -1714,16 +1718,18 @@ iframe {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #ffc451;
+  background: var(--text2);
+  font-family: 'MuseoModerno', cursive;
   border: 0;
   padding: 10px 24px;
-  color: #151515;
+  color: var(--progress);
   transition: 0.4s;
   border-radius: 4px;
 }
 
 .contact .php-email-form button[type=submit]:hover {
   background: var(--progress);
+  color: var(--text2);
 }
 
 @-webkit-keyframes animate-loading {
