@@ -498,8 +498,6 @@ h6 {
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
-
-  flex-direction: column-reverse;
   width: 100%;
   background-image: url(../img/beraki.png);
   min-height: 100vh;
@@ -559,9 +557,10 @@ h6 {
     font-weight: 700;
 }
 .aboutyou {
+  padding-top: 20px;
   border-radius: 10px;
   height: 250px;
-  width: 60%;
+  left: 50%;
 }
 #hero .container {
   padding-top: 72px;
@@ -772,6 +771,7 @@ section {
 /*--------------------------------------------------------------
 # About 
 --------------------------------------------------------------*/
+
 .about .content h3 {
   font-weight: 600;
   font-size: 26px;
@@ -1730,6 +1730,9 @@ font-size: 30px;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
+}
+i.fa-brands:hover{
+  opacity: 0.8;
 }
 i.fa-brands.fa-facebook-f{
   background-color: #c53c3c;
