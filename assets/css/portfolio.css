@@ -484,65 +484,13 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Hero Section
+# Home Section
 --------------------------------------------------------------*/
-/* #hero {
-  width: 100%;
-  background-image: url(../img/beraki.png);
-  min-height: 100vh;
-  -webkit-animation: kenburns-top 1.2s linear reverse backwards;
-    animation: kenburns-top 1.2s linear reverse backwards;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-@-webkit-keyframes kenburns-top {
-  0% {
-    -webkit-transform: scale(1) translateY(0);
-    transform: scale(1) translateY(0);
-    -webkit-transform-origin: 50% 16%;
-    transform-origin: 50% 16%;
-  }
-
-  100% {
-    -webkit-transform: scale(1.25) translateY(-15px);
-    transform: scale(1.25) translateY(-15px);
-    -webkit-transform-origin: top;
-    transform-origin: top;
-  }
-}
-
-@keyframes kenburns-top {
-  0% {
-    -webkit-transform: scale(1) translateY(0);
-    transform: scale(1) translateY(0);
-    -webkit-transform-origin: 50% 16%;
-    transform-origin: 50% 16%;
-  }
-
-  100% {
-    -webkit-transform: scale(1.25) translateY(-15px);
-    transform: scale(1.25) translateY(-15px);
-    -webkit-transform-origin: top;
-    transform-origin: top;
-  }
-} */
-/* #hero.night{
-  background-image: url(/assets/img/spikesa.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}    */
 body {
-  background:linear-gradient(rgba(0, 0, 0, 0.247),rgba(0, 0, 0, 0.24)),url(/assets/img/kisuke.png);
+  background:linear-gradient(rgba(0, 0, 0, 0.247),rgba(0, 0, 0, 0.24)),url(/assets/img/kisuke.png)repeat scroll center center/cover;;
   background-color: rgba(0, 0, 0, 0.5);
   background-repeat: no-repeat;
   height: 100vh;
-  background-size: cover;
-}
-body.night {
-  background: linear-gradient(rgba(0, 0, 0, 0.247), rgba(0, 0, 0, 0.24)),url(/assets/img/beraki.png);
-  background-color: rgba(0, 0, 0, 0.5);
-  background-repeat: no-repeat;
   background-size: cover;
 }
 #hero .hero-content {
@@ -554,72 +502,25 @@ body.night {
   flex-direction: column;
 }
 
-.hero-content h1 {
-  font-size: clamp(1.875rem, 1.1097rem + 3.2653vw, 4.375rem);
-  font-weight: 700;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  position: relative;
-  color: var(--text2);
-  animation: glow 1.5s ease-in-out infinite alternate;
-}
-
-.hero-content p {
-  font-size: 13px;
-  letter-spacing: 3px;
-  margin-top: 0;
-  margin-bottom: 30px;
-  text-transform: capitalize;
-  color: var(--text1);
-  font-weight: 500;
-  font-family: 'MuseoModerno', cursive;
-}
-
-.hero-content .list-social li {
-  float: left;
-  margin-right: 20px;
-}
-
-.hero-content .list-social li i {
-  font-size: clamp(1.875rem, 1.1097rem + 3.2653vw, 4.375rem);
-  color: #ffffff;
-
-  width: 44px;
-  height: 44px;
-  border-radius: 10px;
-
-}
 #clock {
   font-family: 'MuseoModerno', cursive;
-    background: linear-gradient(var(--text2), var(--text1));
+  background: linear-gradient(var(--text2), var(--text1));
   -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    text-transform: uppercase;
-    font-size: 5.5rem;
-      line-height: 5.5rem;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: clamp(1.5625rem, 0.3571rem + 5.1429vw, 5.5rem);
+  line-height: 5.5rem;
+  animation: glow 1.5s ease-in-out infinite alternate;
 }
 .aboutyou {
   border-radius: 10px;
   width: 64%;
   height: 250px;
 }
-#hero .container {
-  padding-top: 72px;
-}
 
-#hero h1 {
-    font-family: 'MuseoModerno', cursive;
-
-    
-    display: flex;
-    text-transform: uppercase;
-    font-size: clamp(1.875rem, 1.1097rem + 3.2653vw, 4.375rem);
-    font-weight: 700;
-    
-}
 @-webkit-keyframes glow {
   from {
     text-shadow: 0 0 5px var(--text2), 0 0 10px var(--text2), 0 0 20px var(--bg1);
@@ -628,23 +529,6 @@ body.night {
   to {
     /* text-shadow: 0 0 5px var(--text1), 0 0 10px var(--text2), 0 0 15px var(--text1); */
   }
-}
-h1::before{
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  background: var(--text1); 
-background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
-background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
- /* -webkit-text-stroke: 1px var(--third); */
-  animation: animate 9s linear infinite;
 }
 .masthead {
   position: relative;
@@ -667,6 +551,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', end
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
+  animation: glow 1.5s ease-in-out infinite alternate;
 }
 
 .masthead h2,
