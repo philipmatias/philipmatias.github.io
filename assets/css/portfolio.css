@@ -9,7 +9,7 @@ html{
 :root{
   --text1:#47b2e4;
   --text2: #1ed760;
-  --bg1: #46433a;
+  --bg1: #323e29;
   --bg2: #557661;
   --background: #121213;
   --progress: #F92C85;
@@ -17,10 +17,10 @@ html{
 .dark-mode{
   --text1: #1ed760;
   --text2: #47b2e4;
-  --bg1: #143446;
+  --bg1: #17485c;
   --bg2: #282828;
   --background: #0606ec;
-  --progress: #69C9D0;
+  --progress: #CC33CC;
 }
 a {
   color: #47b2e4;
@@ -533,12 +533,15 @@ h6 {
   background-size: cover;
 }    */
 body {
-  background: url("../img/kisuke.png") repeat scroll center center/cover;
+  background:linear-gradient(rgba(0, 0, 0, 0.247),rgba(0, 0, 0, 0.24)),url(/assets/img/kisuke.png);
+  background-color: rgba(0, 0, 0, 0.5);
+  background-repeat: no-repeat;
   height: 100vh;
   background-size: cover;
 }
 body.night {
-  background-image: url(/assets/img/beraki.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.247), rgba(0, 0, 0, 0.24)),url(/assets/img/beraki.png);
+  background-color: rgba(0, 0, 0, 0.5);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -588,13 +591,15 @@ body.night {
 }
 #clock {
   font-family: 'MuseoModerno', cursive;
-    color: var(--text2);
-    -webkit-background-clip: text;
+    background: linear-gradient(var(--text2), var(--text1));
+  -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     position: relative;
     display: flex;
+    justify-content: center;
     text-transform: uppercase;
-    font-size: clamp(1.875rem, 1.1097rem + 3.2653vw, 4.375rem);
-    font-weight: 700;
+    font-size: 5.5rem;
+      line-height: 5.5rem;
 }
 .aboutyou {
   border-radius: 10px;
@@ -640,6 +645,63 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', end
   color: transparent;
  /* -webkit-text-stroke: 1px var(--third); */
   animation: animate 9s linear infinite;
+}
+.masthead {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.masthead h1,
+.masthead .h1 {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.8rem;
+  background: linear-gradient(var(--text1), var(--text2));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.masthead h2,
+.masthead .h2 {
+  max-width: 20rem;
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+
+  .masthead h1,
+  .masthead .h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead {
+    height: 100vh;
+    padding: 0;
+  }
+
+  .masthead h1,
+  .masthead .h1 {
+    font-size: 6.5rem;
+    line-height: 6.5rem;
+    letter-spacing: 0.8rem;
+  }
+
+  .masthead h2,
+  .masthead .h2 {
+    max-width: 30rem;
+    font-size: 1.25rem;
+  }
 }
 @keyframes animate{
   0%{
@@ -1683,28 +1745,25 @@ img.ido{
 }
 .wrapper .icon span{
   color: var(--text2);
-  font-size: 20px;
   float: left;
-  width: 44px;
-  height: 44px;
+  width: 30px;
+  height: 30px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  border-radius: 10px;
   transition: all 0.3s ease-in-out;
   margin-left: 15px;
   cursor: pointer;
 }
 i.fa-brands{
   color: #ffffff;
-font-size: 30px;
+font-size: 20px;
   float: left;
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
+  border-radius: 7px;
 }
 i.fa-brands:hover{
   opacity: 0.8;
