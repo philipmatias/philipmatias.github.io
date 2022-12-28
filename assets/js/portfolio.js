@@ -214,7 +214,7 @@
 
   });
   
-
+ 
   /**
    * Initiate portfolio lightbox 
    */
@@ -275,7 +275,24 @@
     });
 
   }
-
+//darkmode
+  const toggle = document.getElementById('switch');
+  let isDarkMode = false;
+  toggle.addEventListener('click', () => {
+    isDarkMode = !isDarkMode;
+    document.body.classList.toggle('dark-mode', isDarkMode);
+    if (isDarkMode) {
+      document.body.style.backgroundImage = 'url(/assets/img/beraki.png)';
+    } else {
+      document.body.style.backgroundImage = 'url(/assets/img/kisuke.png)';
+    }
+    if($("body").hasClass("dark-mode")) {
+       
+   $('switch').attr("name", "sunny-outline");
+    } else{
+    $('switch').attr("name", "moon-outline");
+    }
+  });
   /**
    * Animation on scroll
    */
@@ -314,16 +331,7 @@ setInterval(updateClock, 1000);
 
 
 
-//darkmode
-// $("switch").click(function(){
-//     $("body").toggleClass("dark-mode");
-//     if($("body").hasClass("dark-mode")) {
-       
-//     $(".switch").attr("name", "sunny-outline");
-//     } else{
-//     $(".switch").attr("name", "moon-outline");
-//     }
-// });
+
 
 
 
