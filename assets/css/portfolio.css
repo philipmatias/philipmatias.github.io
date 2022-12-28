@@ -70,26 +70,12 @@ h6 {
   overflow: hidden;
   background: var(--bg2);
 }
-.custom-shape-divider-bottom-1672215617 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1672215617 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 269px;
-  transform: rotateY(180deg);
-}
-
-.custom-shape-divider-bottom-1672215617 .shape-fill {
-  fill: var(--bg2);
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-bottom-1672221899 svg {
+    width: calc(119% + 1.3px);
+    height: 164px;
+  }
 }
 #preloader:before {
   content: "";
@@ -677,17 +663,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', end
 
   #hero .hero-img img {
     width: 70%;
-  }
-}
-
-@media (max-width: 575px) {
-  #hero .hero-img img {
-    width: 80%;
-  }
-
-  #hero .btn-get-started {
-    font-size: 16px;
-    padding: 10px 24px 11px 24px;
   }
 }
 

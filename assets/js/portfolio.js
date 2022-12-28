@@ -283,16 +283,13 @@
     document.body.classList.toggle('dark-mode', isDarkMode);
     if (isDarkMode) {
       document.body.style.backgroundImage = 'url(/assets/img/beraki.png)';
+      toggle.innerHTML = '<ion-icon name="moon-outline"></ion-icon>';
     } else {
       document.body.style.backgroundImage = 'url(/assets/img/kisuke.png)';
-    }
-    if($("body").hasClass("dark-mode")) {
-       
-   $('switch').attr("name", "sunny-outline");
-    } else{
-    $('switch').attr("name", "moon-outline");
+      toggle.innerHTML = '<ion-icon name="sunny-outline"></ion-icon>';
     }
   });
+ 
   /**
    * Animation on scroll
    */
