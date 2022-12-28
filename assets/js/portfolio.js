@@ -281,14 +281,48 @@
   toggle.addEventListener('click', () => {
     isDarkMode = !isDarkMode;
     document.body.classList.toggle('dark-mode', isDarkMode);
+
+    // Create a canvas element to draw the image
+    const canvas = document.createElement('canvas');
+
+    // Set the canvas size to match the window
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    // Get the canvas context
+    const ctx = canvas.getContext('2d');
+
+    // Load the image
+    const image = new Image();
     if (isDarkMode) {
-      document.body.style.backgroundImage = 'url(/assets/img/beraki.png)';
+      image.src = '/assets/img/beraki.png';
       toggle.innerHTML = '<ion-icon name="moon-outline"></ion-icon>';
     } else {
-      document.body.style.backgroundImage = 'url(/assets/img/kisuke.png)';
+      image.src = '/assets/img/kisuke.png';
       toggle.innerHTML = '<ion-icon name="sunny-outline"></ion-icon>';
     }
+    image.onload = () => {
+      // Draw the image on the canvas
+      ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
+
+      // Get the image data from the canvas
+      const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+
+      // Darken the image by reducing the brightness of each pixel
+      for (let i = 0; i < imageData.data.length; i += 4) {
+        imageData.data[i] *= 0.7; // Red channel
+        imageData.data[i + 1] *= 0.7; // Green channel
+        imageData.data[i + 2] *= 0.7; // Blue channel
+      }
+
+      // Put the modified image data back on the canvas
+      ctx.putImageData(imageData, 0, 0);
+
+      // Set the body's background image to the canvas
+      document.body.style.backgroundImage = `url(${canvas.toDataURL()})`;
+    };
   });
+
  
   /**
    * Animation on scroll
