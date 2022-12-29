@@ -101,7 +101,7 @@ h6 {
   border: 7px solid var(--text2);
   border-top-color: var(--progress);
   border-bottom-color: var(--text1);
-  border-left-color: var(--bg1);
+  border-left-color: #CC33CC;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -129,62 +129,6 @@ h6 {
   }
 }
 
-/* .loader {
-  width: 100px;
-  height: 80px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  margin: auto;
-}
-
-.loader .image {
-  width: 100px;
-  height: 160px;
-  font-size: 40px;
-  text-align: center;
-  transform-origin: bottom center;
-  animation: 3s rotate infinite;
-  opacity: 0;
-}
-
-.loader span {
-  display: block;
-  width: 100%;
-  text-align: center;
-  position: absolute;
-  bottom: 0;
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotate(90deg);
-  }
-
-  10% {
-    opacity: 0;
-  }
-
-  35% {
-    transform: rotate(0deg);
-    opacity: 1;
-  }
-
-  65% {
-    transform: rotate(0deg);
-    opacity: 1;
-  }
-
-  80% {
-    opacity: 0;
-  }
-
-  100% {
-    transform: rotate(-90deg);
-  }
-} */
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -1685,7 +1629,7 @@ i.fa-brands.fa-tiktok{
 i.fa-brands.fa-github{
   background-color: #333333;
 }
-#footer .custom-shape-divider-bottom-1672301507 {
+#footer.custom-shape-divider-bottom-1672315905 {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1694,15 +1638,18 @@ i.fa-brands.fa-github{
   line-height: 0;
   transform: rotate(180deg);
 }
-
- #footer .custom-shape-divider-bottom-1672301507 svg {
+.nake{
+  color: crimson;
+}
+#footer.custom-shape-divider-bottom-1672315905 svg {
   position: relative;
   display: block;
-  width: calc(139% + 1.3px);
-  height: 246px;
+  width: calc(100% + 1.3px);
+  height: 130px;
+  transform: rotateY(180deg);
 }
 
-.custom-shape-divider-bottom-1672301507 .shape-fill {
+.custom-shape-divider-bottom-1672315905 .shape-fill {
   fill: var(--bg2);
 }
 @media (max-width: 768px) {
