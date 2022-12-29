@@ -7,20 +7,35 @@ html{
   scroll-behavior: smooth;
 }
 :root{
-  --text1: #e2ecf4;
-  --text2: #1ed760;
+  --text1: #1ed760;
+  --text2: #ffee32;
   --bg1: #63806b;
   --bg2: #3c5344;
   --background: #121213;
   --progress: #F92C85;
 }
 .dark-mode{
-  --text1: #e2ecf4;
-  --text2: #47b2e4;
+  --text1: #ffee32;
+  --text2: #1ed760;
   --bg1: #17485c;
   --bg2: #1c1c1c;
   --background: #0606ec;
   --progress: #CC33CC;
+}
+.wow{
+--primary: #000;
+--secondary: #000;
+--github: #a1a1a1;
+--third: #1ed760;
+--fourth: #ffee32;
+--background: #282828;
+
+--primary: #a59934;
+--secondary: #a1a1a1;
+--github: #a1a1a1;
+--third: #ffee32;
+--fourth: #1ed760;
+--background: #034f89;
 }
 a {
   color: #47b2e4;
@@ -55,7 +70,7 @@ h4,
 h5,
 h6 {
   font-family: 'MuseoModerno', cursive;
-  color: #47b2e4
+  color: var(--text2)
 }
 
 /* --------------------------------------------------------------
@@ -547,6 +562,7 @@ body {
 
 .masthead h1,
 .masthead .h1 {
+  
   font-size: 2.5rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
@@ -669,9 +685,9 @@ section {
   display: block;
   width: 20%;
   height: 3px;
-  background: var(--text1);
+  background: var(--text2);
   bottom: 0;
-  box-shadow: 3px 0px 10px 2px var(--text1);
+  box-shadow: 3px 0px 10px 2px var(--text2);
   left: calc(50% - 10%);
 }
 
@@ -1432,8 +1448,9 @@ iframe {
   padding: 56px;
   border-radius: 10px;
   background: var(--bg1);
-  border-top: 2px solid var(--text2);
-  border-bottom: 2px solid var(--text2);
+  border-top: 3px solid var(--text2);
+  border-bottom: 3px solid var(--text2);
+  position: inherit;
 }
 
 .contact .info i {
@@ -1473,8 +1490,8 @@ iframe {
 
 .contact .php-email-form {
   width: 100%;
-  border-top: 2px solid var(--text2);
-  border-bottom: 2px solid var(--text2);
+  border-top: 3px solid var(--text2);
+  border-bottom: 3px solid var(--text2);
   background: var(--bg1);
   padding: 20px;
   border-radius: 10px;
@@ -1532,13 +1549,13 @@ iframe {
   font-size: 14px;
   border-radius: 10px;
   background: var(--bg2);
-  border: 1.5px solid var(--text2);
+  border: 2px solid var(--text2);
   font-family: 'MuseoModerno', cursive;
 }
 
 .contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
-  border: 1.5px solid var(--progress);
+  border: 2px solid var(--progress);
   color: var(--text1);
 }
 
@@ -1557,7 +1574,9 @@ iframe {
   background: var(--text2);
   font-family: 'MuseoModerno', cursive;
   border: 0;
-  padding: 10px 24px;
+  padding: 7px;
+  font-size: 13px;
+  margin-bottom: 15px;
   color: var(--progress);
   transition: 0.4s;
   border-radius: 10px;
