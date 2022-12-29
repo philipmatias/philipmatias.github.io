@@ -7,18 +7,18 @@ html{
   scroll-behavior: smooth;
 }
 :root{
-  --text1:#47b2e4;
+  --text1: #e2ecf4;
   --text2: #1ed760;
-  --bg1: #323e29;
-  --bg2: #557661;
+  --bg1: #63806b;
+  --bg2: #3c5344;
   --background: #121213;
   --progress: #F92C85;
 }
 .dark-mode{
-  --text1: #1ed760;
+  --text1: #e2ecf4;
   --text2: #47b2e4;
   --bg1: #17485c;
-  --bg2: #282828;
+  --bg2: #1c1c1c;
   --background: #0606ec;
   --progress: #CC33CC;
 }
@@ -26,6 +26,7 @@ a {
   color: #47b2e4;
   text-decoration: none;
 }
+
 a:hover {
   color: #73c5eb;
   text-decoration: none;
@@ -34,7 +35,7 @@ a:hover {
   font-size: 25px;
   margin-left: 30px;
   cursor: pointer;
-  color: var(--text2);
+  color: var(--progress);
 }
 #switch:hover{
   color: var(--text1);
@@ -220,6 +221,7 @@ h6 {
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 0 0 10px 10px;
+    background-color: var(--bg2);
 }
 
 .logo img {
@@ -316,6 +318,7 @@ h6 {
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
   border-radius: 4px;
+
 }
 
 .navbar .dropdown ul li {
@@ -659,17 +662,6 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  text-shadow: 0 0 10px var(--text1), 0 0 20px var(--text1);
-  animation: glow 0.8s ease-in-out infinite alternate;
-}
-@-webkit-keyframes glow {
-  from {
-    text-shadow: 0 0 5px var(--text2), 0 0 10px var(--text2), 0 0 20px var(--bg1);
-  }
-
-  to {
-    /* text-shadow: 0 0 5px var(--text1), 0 0 10px var(--text2), 0 0 15px var(--text1); */
-  }
 }
 .section-title h2::after {
   content: "";
@@ -679,7 +671,7 @@ section {
   height: 3px;
   background: var(--text1);
   bottom: 0;
-  box-shadow: 3px 0px 11px 2px var(--text1);
+  box-shadow: 3px 0px 10px 2px var(--text1);
   left: calc(50% - 10%);
 }
 
@@ -1170,7 +1162,6 @@ i.fa-solid .collapsed {
   margin-bottom: 0 auto;
   list-style: none;
   text-align: center;
-  background-color: var(--bg1);
 }
 
 .portfolio .portfolio-flters li {
@@ -1189,7 +1180,8 @@ i.fa-solid .collapsed {
 .portfolio .portfolio-flters li:hover,
 .portfolio .portfolio-flters li.filter-active {
   color: var(--text1);
-  background: var(--bg2);
+  background: var(--bg1);
+  padding: 5px 10px;
   border-radius: 5px;
 }
 
@@ -1486,6 +1478,7 @@ iframe {
   background: var(--bg1);
   padding: 20px;
   border-radius: 10px;
+  height: 95%;
 }
 
 .contact .php-email-form .form-group {
@@ -1599,7 +1592,6 @@ iframe {
 --------------------------------------------------------------*/
 footer {
   background: var(--bg1);
-  padding: 15px 23px;
   color: var(--text2);
   text-align: center;
 }
@@ -1618,6 +1610,7 @@ footer span a:hover {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  padding-bottom: 30px;
   font-family: 'MuseoModerno', cursive;
 }
 img.ido{
@@ -1673,8 +1666,26 @@ i.fa-brands.fa-tiktok{
 i.fa-brands.fa-github{
   background-color: #333333;
 }
+#footer .custom-shape-divider-bottom-1672301507 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
 
+ #footer .custom-shape-divider-bottom-1672301507 svg {
+  position: relative;
+  display: block;
+  width: calc(139% + 1.3px);
+  height: 246px;
+}
 
+.custom-shape-divider-bottom-1672301507 .shape-fill {
+  fill: var(--bg2);
+}
 @media (max-width: 768px) {
   #footer .footer-bottom {
     padding-top: 20px;

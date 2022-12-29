@@ -296,10 +296,10 @@
     const image = new Image();
     if (isDarkMode) {
       image.src = '/assets/img/beraki.png';
-      toggle.innerHTML = '<ion-icon name="moon-outline"></ion-icon>';
+      toggle.innerHTML = '<ion-icon name="sunny-outline"></ion-icon>';
     } else {
       image.src = '/assets/img/kisuke.png';
-      toggle.innerHTML = '<ion-icon name="sunny-outline"></ion-icon>';
+      toggle.innerHTML = '<ion-icon name="moon-outline"></ion-icon>';
     }
     image.onload = () => {
       // Draw the image on the canvas
@@ -323,6 +323,7 @@
     };
   });
 
+  
  
   /**
    * Animation on scroll
