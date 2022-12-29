@@ -148,7 +148,9 @@ h6 {
 #preloader.loaded .line:after {
   opacity: 1.0;
 }
-
+#header.header-scrolled{
+  background-color: var(--bg2);
+}
 #preloader.loaded:before,
 #preloader.loaded:after {
   -webkit-animation: preloaderfinish 300ms ease-in-out 500ms forwards;
@@ -256,16 +258,10 @@ h6 {
   padding: 15px 0;
 }
 
-#header.header-scrolled,
 #header.header-inner-pages {
-  /* background-image: url(/assets/img/sa.jpg);
-  background-size: cover;
-  background-position: center; */
-  /* background: #1ed75f54; */
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  border-radius: 0 0 10px 10px;
-    background-color: var(--bg2);
+  background-color: var(--bg2);
 }
 
 .logo img {
@@ -332,6 +328,7 @@ h6 {
   color: var(--progress);
   white-space: nowrap;
   transition: 0.3s;
+  text-transform: uppercase;
 }
 
 .navbar a i,
@@ -468,10 +465,9 @@ h6 {
   right: 15px;
   bottom: 15px;
   left: 15px;
-  padding: 10px 0;
-  border-radius: 5px;
-  /* background-image: url(/assets/img/cowboy.jpg);
-  background-size: cover; */
+  padding: 10px;
+  text-transform: uppercase;
+  border-radius: 10px;
   background: linear-gradient(rgba(0, 0, 0, 0.247), rgba(0, 0, 0, 0.24)), url(/assets/img/bankai.jpg);
   background-size: cover;
   overflow-y: auto;
