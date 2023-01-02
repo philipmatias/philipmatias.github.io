@@ -11,17 +11,21 @@ html {
 
 :root {
   --text1: #1ed760;
-  --text2: crimson;
-  --bg1: #1c1c1c;
-  --bg2: #2F5233;
+  --text2: #1ed760;
+  --text3: #000000;
+  --text4: #ffffff;
+  --bg1: #17485c;
+  --bg2: #f8f9f9;
   --background: #121213;
   --progress: #CC33CC;
   --progrez: #1ed75f88;
 }
 
 .dark-mode {
-  --text1: #ffee32;
-  --text2: #1ed760;
+  --text1: crimson;
+  --text2: crimson;
+   --text3: #ffffff;
+   --text4: #ffffff;
   --bg1: #17485c;
   --bg2: #1c1c1c;
   --background: #0606ec;
@@ -100,7 +104,7 @@ h6 {
 #preloader:before,
 #preloader:after {
   content: "";
-  background-color: var(--color-secondary);
+  background-color: var(--bg1);
   position: absolute;
   inset: 0;
   width: 50%;
@@ -139,7 +143,7 @@ h6 {
 #preloader .line:after {
   content: "";
   position: absolute;
-  background-color: var(--text1);
+  background-color: var(--text2);
   left: 0;
   top: 0;
   width: 1px;
@@ -724,7 +728,7 @@ section {
 
 .section-title p {
   margin-bottom: 0;
-  color: var(--text2);
+  color: var(--text3);
   font-family: 'MuseoModerno', cursive;
 }
 
@@ -762,7 +766,7 @@ section {
 .why-us .content p {
   font-family: 'MuseoModerno', cursive;
   font-size: 15px;
-  color: var(--text2);
+  color: var(--text1);
 }
 
 .why-us .img {
@@ -822,7 +826,7 @@ section {
 .why-us .accordion-list p {
   margin-bottom: 0;
   padding: 10px 0 0 0;
-  color: var(--text1);
+  color: var(--text4);
   font-family: 'MuseoModerno', cursive;
 }
 
@@ -996,7 +1000,7 @@ i.fa-solid {
   margin-bottom: 0;
   padding: 10px 0 0 0;
   font-family: 'MuseoModerno', cursive;
-  color: var(--text1);
+  color: var(--text4);
 }
 
 .faq .faq-list .icon-show {
@@ -1013,7 +1017,7 @@ i.fa-solid .collapsed {
 }
 
 .faq .faq-list a.collapsed:hover {
-  color: #47b2e4;
+  color: var(--text3);
 }
 
 .faq .faq-list a.collapsed .icon-show {
