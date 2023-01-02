@@ -311,7 +311,7 @@ h6 {
 }
 
 /**
-* Desktop Navigation 
+* Desktop Navigation
 */
 .navbar {
   padding: 0;
@@ -428,7 +428,7 @@ h6 {
 }
 
 /**
-* Mobile Navigation 
+* Mobile Navigation
 */
 .mobile-nav-toggle {
   color: var(--progress);
@@ -546,10 +546,16 @@ h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.247), rgba(0, 0, 0, 0.24)), url(/assets/img/kisuke.png);
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+}
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/aizen.jpg") top right;
+  background:url(/assets/img)top right;
   background-size: cover;
   position: relative;
 }
@@ -644,12 +650,7 @@ font-family: 'Seymour One', sans-serif;
     transform: translateY(-5px);
   }
 }
-body {
-  background: linear-gradient(rgba(0, 0, 0, 0.247), rgba(0, 0, 0, 0.24)), url(/assets/img/kisuke.png);
-  background-repeat: no-repeat;
-  height: 100vh;
-  background-size: cover;
-}
+
 
 #clock {
   background: linear-gradient(var(--text2), var(--text1));
@@ -727,7 +728,7 @@ section {
 
 
 /*--------------------------------------------------------------
-# About 
+# About
 --------------------------------------------------------------*/
 
 .about .content h3 {
