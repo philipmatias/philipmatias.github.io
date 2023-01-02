@@ -301,10 +301,10 @@
     const image = new Image();
     if (isDarkMode) {
       image.src = '/assets/img/beraki.png';
-      toggle.innerHTML = '<ion-icon name="partly-sunny-sharp"></ion-icon>';
+      toggle.innerHTML = '<ion-icon name="sunny"></ion-icon>';
     } else {
       image.src = '/assets/img/kisuke.png';
-      toggle.innerHTML = '<ion-icon name="cloudy-night-sharp"></ion-icon>';
+      toggle.innerHTML = '<ion-icon name="moon"></ion-icon>';
     }
     image.onload = () => {
       // Draw the image on the canvas
