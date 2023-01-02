@@ -2,7 +2,7 @@
 
 body {
   color: #444444;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'MuseoModerno', cursive;
 }
 
 html {
@@ -11,11 +11,12 @@ html {
 
 :root {
   --text1: #1ed760;
-  --text2: #ffee32;
-  --bg1: #63806b;
-  --bg2: #3c5344;
+  --text2: crimson;
+  --bg1: #1c1c1c;
+  --bg2: #17485c;
   --background: #121213;
-  --progress: #F92C85;
+  --progress: #CC33CC;
+  --progrez: #1ed75f88;
 }
 
 .dark-mode {
@@ -24,7 +25,8 @@ html {
   --bg1: #17485c;
   --bg2: #1c1c1c;
   --background: #0606ec;
-  --progress: #CC33CC;
+  --progress: #F92C85;
+  --progrez: #ffee327c;
 }
 
 .wow {
@@ -555,7 +557,7 @@ body {
 #hero {
   width: 100%;
   height: 100vh;
-  background:url(/assets/img)top right;
+  background: url(/assets/img)top right;
   background-size: cover;
   position: relative;
 }
@@ -735,57 +737,6 @@ section {
   font-weight: 600;
   font-size: 26px;
 }
-
-.about .content ul {
-  list-style: none;
-  padding: 0;
-}
-
-.about .content ul li {
-  padding-left: 28px;
-  position: relative;
-}
-
-.about .content ul li+li {
-  margin-top: 10px;
-}
-
-.about .content ul i {
-  position: absolute;
-  left: 0;
-  top: 2px;
-  font-size: 20px;
-  color: #47b2e4;
-  line-height: 1;
-}
-
-.about .content p:last-child {
-  margin-bottom: 0;
-}
-
-.about .content .btn-learn-more {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 12px 32px;
-  border-radius: 4px;
-  transition: 0.3s;
-  line-height: 1;
-  color: #47b2e4;
-  -webkit-animation-delay: 0.8s;
-  animation-delay: 0.8s;
-  margin-top: 6px;
-  border: 2px solid #47b2e4;
-}
-
-.about .content .btn-learn-more:hover {
-  background: #47b2e4;
-  color: #fff;
-  text-decoration: none;
-}
-
 
 /*--------------------------------------------------------------
 # Why Us
@@ -978,7 +929,7 @@ section {
 }
 
 .skills .progress-bar-wrap {
-  background: #47b2e479;
+  background: var(--progrez);
   height: 10px;
   border-radius: 10px;
 }
