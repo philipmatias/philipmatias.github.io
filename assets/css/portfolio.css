@@ -578,13 +578,11 @@ h6 {
 }
 
 #hero h1 {
-  font-size: 80px;
-
-  font-family: 'Seymour One', sans-serif;
+  font-size: 100px;
+font-family: 'Seymour One', sans-serif;
   background: linear-gradient(var(--text1), var(--text2));
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  background-clip: text;
   animation: glow 1.5s ease-in-out infinite alternate;
 }
 
@@ -654,7 +652,6 @@ body {
 }
 
 #clock {
-font-family: 'Seymour One', sans-serif;
   background: linear-gradient(var(--text2), var(--text1));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
