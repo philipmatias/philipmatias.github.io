@@ -579,8 +579,8 @@ h6 {
 
 #hero h1 {
   font-size: 80px;
-  font-weight: 700;
 
+  font-family: 'Seymour One', sans-serif;
   background: linear-gradient(var(--text1), var(--text2));
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -654,7 +654,7 @@ body {
 }
 
 #clock {
-  font-family: 'MuseoModerno', cursive;
+font-family: 'Seymour One', sans-serif;
   background: linear-gradient(var(--text2), var(--text1));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
