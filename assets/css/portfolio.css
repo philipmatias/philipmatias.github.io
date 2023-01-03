@@ -592,7 +592,7 @@ body {
 #hero h1 {
   font-size: 100px;
 font-family: 'Seymour One', sans-serif;
-  background: linear-gradient(var(--text1), var(--text2));
+  background: radial-gradient(var(--text1), var(--progress));
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   animation: glow 1.5s ease-in-out infinite alternate;
