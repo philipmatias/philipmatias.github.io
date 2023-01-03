@@ -10,12 +10,14 @@ html {
 }
 
 :root {
+  --font: 'MuseoModerno', cursive;
+  --font2:'Seymour One', sans-serif;
   --text1: #1ed760;
-  --text2: #1ed760;
-  --text3: #000000;
+  --text2: crimson;
+  --text3: #1c1e21;
   --text4: #ffffff;
-  --bg1: #17485c;
-  --bg2: #f8f9f9;
+  --bg1: #E4F0F6;
+  --bg2: #ffffff;
   --background: #121213;
   --progress: #CC33CC;
   --progrez: #1ed75f88;
@@ -23,10 +25,10 @@ html {
 
 .dark-mode {
   --text1: crimson;
-  --text2: crimson;
+  --text2: #1ed760;
    --text3: #ffffff;
-   --text4: #ffffff;
-  --bg1: #17485c;
+   --text4: #000000;
+  --bg1: #25273c;
   --bg2: #1c1c1c;
   --background: #0606ec;
   --progress: #F92C85;
@@ -63,11 +65,11 @@ a:hover {
   font-size: 25px;
   margin-left: 30px;
   cursor: pointer;
-  color: var(--progress);
+  color: var(--text1);
 }
 
 #switch:hover {
-  color: var(--text2);
+  color: var(--text2  );
 }
 
 .menu-btn {
@@ -85,7 +87,7 @@ h4,
 h5,
 h6 {
   font-family: 'MuseoModerno', cursive;
-  color: var(--text2)
+  color: var(--text1)
 }
 
 
@@ -258,7 +260,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background-color: var(--progress);
+  background-color: var(--text1);
 }
 
 
@@ -344,7 +346,7 @@ h6 {
   padding: 10px 0 10px 30px;
   font-size: 15px;
   font-weight: 500;
-  color: var(--progress);
+  color: var(--text1);
   white-space: nowrap;
   transition: 0.3s;
 
@@ -401,7 +403,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: var(--progress);
+  color: var(--text2);
 }
 
 .navbar .dropdown:hover>ul {
@@ -437,7 +439,7 @@ h6 {
 * Mobile Navigation
 */
 .mobile-nav-toggle {
-  color: var(--progress);
+  color: var(--text1);
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -446,7 +448,7 @@ h6 {
 }
 
 .mobile-nav-toggle.bi-x {
-  color: var(--progress);
+  color: var(--text1);
 }
 
 @media (max-width: 991px) {
@@ -486,7 +488,7 @@ h6 {
   left: 15px;
   padding: 10px;
   border-radius: 10px;
-  background: linear-gradient(rgba(0, 0, 0, 0.247), rgba(0, 0, 0, 0.24)), url(/assets/img/bankai.jpg);
+  background-color: var(--bg1);
   background-size: cover;
   overflow-y: auto;
   transition: 0.3s;
@@ -497,7 +499,7 @@ h6 {
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: var(--progress);
+  color: var(--text1);
 }
 
 .navbar-mobile a:hover,
@@ -547,9 +549,6 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Home Section
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
 body {
@@ -591,10 +590,8 @@ body {
 
 #hero h1 {
   font-size: 100px;
-font-family: 'Seymour One', sans-serif;
-  background: radial-gradient(var(--text1), var(--progress));
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+  font-family: 'Seymour One', sans-serif;
+  color: var(--text1);
   animation: glow 1.5s ease-in-out infinite alternate;
 }
 
@@ -608,7 +605,7 @@ font-family: 'Seymour One', sans-serif;
 
 #hero .btn-scroll {
   transition: 0.4s;
-  color: var(--text2);
+  color: var(--text1);
   animation: up-down 1s ease-in-out infinite alternate-reverse both;
 }
 
@@ -659,9 +656,7 @@ font-family: 'Seymour One', sans-serif;
 
 
 #clock {
-  background: linear-gradient(var(--text2), var(--text1));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--text1);
   position: relative;
   display: flex;
   justify-content: center;
@@ -678,7 +673,7 @@ video {
 
 @-webkit-keyframes glow {
   from {
-    text-shadow: 0 0 5px var(--text2), 0 0 10px var(--text2), 0 0 20px var(--bg1);
+    text-shadow: 0 0 5px var(--text1), 0 0 10px var(--text1), 0 0 20px var(--bg1);
   }
 
   to {
@@ -720,9 +715,9 @@ section {
   display: block;
   width: 20%;
   height: 3px;
-  background: var(--text2);
+  background: var(--text1);
   bottom: 0;
-  box-shadow: 3px 0px 10px 2px var(--text2);
+  box-shadow: 3px 0px 10px 2px var(--text1);
   left: calc(50% - 10%);
 }
 
@@ -742,6 +737,14 @@ section {
   font-size: 26px;
 }
 
+.bankai {
+  margin-left: 5%;
+  width: 90%;
+  background-color: var(--bg1);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 30px rgb(0 0 0 / 50%);
+}
 /*--------------------------------------------------------------
 # Why Us
 --------------------------------------------------------------*/
@@ -753,9 +756,14 @@ section {
   font-family: 'MuseoModerno', cursive;
   font-weight: 400;
   font-size: 34px;
-  color: var(--text2);
+  color: var(--text3);
 }
-
+span.typing{
+  color: var(--text1);
+  font-size: 34px;
+  font-weight: 900;
+  font-family: var(--font2);
+}
 .why-us .content h4 {
   font-family: 'MuseoModerno', cursive;
   font-size: 20px;
@@ -766,7 +774,7 @@ section {
 .why-us .content p {
   font-family: 'MuseoModerno', cursive;
   font-size: 15px;
-  color: var(--text1);
+  color: var(--text3);
 }
 
 .why-us .img {
@@ -790,9 +798,10 @@ section {
 
 .why-us .accordion-list li {
   padding: 20px;
-  background: var(--bg1);
+  background: var(--bg2);
   border-radius: 4px;
   border-radius: 10px;
+  box-shadow: 0px 10px 30px rgb(0 0 0 / 30%);
 }
 
 .why-us .accordion-list a {
@@ -805,7 +814,7 @@ section {
   padding-right: 30px;
   outline: none;
   cursor: pointer;
-  color: var(--text2);
+  color: var(--text1);
 }
 
 .why-us .accordion-list span {
@@ -818,6 +827,8 @@ section {
 
 .why-us .accordion-list i {
   font-size: 24px;
+  background-color: var(--bg2);
+  border-radius: 50%;
   position: absolute;
   right: 0;
   top: 0;
@@ -826,7 +837,7 @@ section {
 .why-us .accordion-list p {
   margin-bottom: 0;
   padding: 10px 0 0 0;
-  color: var(--text4);
+  color: var(--text3);
   font-family: 'MuseoModerno', cursive;
 }
 
@@ -836,12 +847,12 @@ section {
 
 .why-us .accordion-list a.collapsed {
   font-family: 'MuseoModerno', cursive;
-  color: var(--text2);
+  color: var(--text1);
 }
 
 .why-us .accordion-list a.collapsed:hover {
   font-family: 'MuseoModerno', cursive;
-  color: var(--text1);
+  color: var(--text2);
 }
 
 .why-us .accordion-list a.collapsed .icon-show {
@@ -900,12 +911,6 @@ section {
   padding-bottom: 10px;
 }
 
-.skills .content ul i {
-  font-size: 20px;
-  padding-right: 4px;
-  color: #47b2e4;
-}
-
 .skills .content p:last-child {
   margin-bottom: 0;
 }
@@ -933,20 +938,20 @@ section {
 }
 
 .skills .progress-bar-wrap {
-  background: var(--progrez);
+  background: var(--bg2);
   height: 10px;
   border-radius: 10px;
+  margin-left: 1%;
 }
 
 .skills .progress-bar {
-  width: 1px;
   height: 10px;
   transition: 0.9s;
-  box-shadow: 3px 0px 11px 2px var(--text2);
-  background-color: var(--text2);
+  box-shadow: 3px 0px 11px 2px var(--text1);
+  background-color: var(--text1);
   border-radius: 10px
+  
 }
-
 .faq .faq-list {
   padding: 0 100px;
 }
@@ -965,6 +970,7 @@ section {
   background: var(--bg1);
   border-radius: 10px;
   position: relative;
+  box-shadow: 0px 10px 30px rgb(0 0 0 / 40%);
 }
 
 .faq .faq-list a {
@@ -977,7 +983,7 @@ section {
   padding: 0 30px;
   outline: none;
   cursor: pointer;
-  color: var(--text2);
+  color: var(--text1);
 }
 
 i.fa-solid {
@@ -985,7 +991,7 @@ i.fa-solid {
   position: absolute;
   right: 0;
   left: 20px;
-  color: var(--text2);
+  color: var(--text1);
 }
 
 .faq .faq-list .icon-show,
@@ -994,13 +1000,15 @@ i.fa-solid {
   position: absolute;
   right: 0;
   top: 0;
+  background-color: var(--bg1);
+  border-radius: 50%;
 }
 
 .faq .faq-list p {
   margin-bottom: 0;
   padding: 10px 0 0 0;
   font-family: 'MuseoModerno', cursive;
-  color: var(--text4);
+  color: var(--text3);
 }
 
 .faq .faq-list .icon-show {
@@ -1008,8 +1016,9 @@ i.fa-solid {
 }
 
 .faq .faq-list a.collapsed {
-  color: var(--text2);
+  color: var(--text1);
   transition: 0.3s;
+  
 }
 
 i.fa-solid .collapsed {
@@ -1017,11 +1026,12 @@ i.fa-solid .collapsed {
 }
 
 .faq .faq-list a.collapsed:hover {
-  color: var(--text3);
+  color: var(--text2);
 }
 
 .faq .faq-list a.collapsed .icon-show {
   display: inline-block;
+
 }
 
 .faq .faq-list a.collapsed .icon-close {
@@ -1080,10 +1090,13 @@ i.fa-solid .collapsed {
   color: #47b2e4;
 }
 
-.skills-content {
-  background-color: var(--bg1);
-  padding: 40px;
-  border-radius: 10px;
+.skills-content{
+  margin-left: 10%;
+    width: 80%;
+    background-color: var(--bg1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgb(0 0 0 / 50%);
 }
 
 .progres {
@@ -1204,9 +1217,10 @@ i.fa-solid .collapsed {
 }
 
 .portfolio .portfolio-wrap {
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: rgb(0 0 0 / 50%) 0px 10px 17px 3px;
   border-radius: 10px;
   height: 100%;
+  gap: 40px;
   overflow: hidden;
 }
 
@@ -1426,12 +1440,14 @@ i.fa-solid .collapsed {
 # Contact
 --------------------------------------------------------------*/
 iframe {
+  box-shadow: 0px 10px 30px rgb(0 0 0 / 50%);
   border-radius: 10px;
   width: 100%;
   height: 300px;
 }
 
 .contact .info {
+    box-shadow: 0px 10px 30px rgb(0 0 0 / 50%);
   width: 100%;
   padding: 56px;
   border-radius: 10px;
@@ -1477,6 +1493,7 @@ iframe {
 }
 
 .contact .php-email-form {
+  box-shadow: 0px 10px 30px rgb(0 0 0 / 50%);
   width: 100%;
   border-top: 3px solid var(--text2);
   border-bottom: 3px solid var(--text2);
@@ -1565,13 +1582,13 @@ iframe {
   padding: 7px;
   font-size: 13px;
   margin-bottom: 15px;
-  color: var(--progress);
+  color: var(--text1);
   transition: 0.4s;
   border-radius: 10px;
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: var(--progress);
+  background: var(--text1);
   color: var(--text2);
 }
 
