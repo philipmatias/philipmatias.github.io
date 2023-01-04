@@ -300,7 +300,7 @@
     // Load the image
     const image = new Image();
     if (isDarkMode) {
-      image.src = '/assets/img/beraki.png';
+      image.src = '/assets/img/bans.jpg';
       toggle.innerHTML = '<ion-icon name="sunny"></ion-icon>';
     } else {
       image.src = '/assets/img/aizen.jpg';
