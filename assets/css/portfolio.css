@@ -255,7 +255,7 @@ h6 {
 
 .back-to-top i {
   font-size: 24px;
-  color: var(--text2);
+  color: var(--text1);
   line-height: 0;
 }
 
@@ -1211,7 +1211,7 @@ i.fa-solid .collapsed {
 
 .portfolio .portfolio-flters li {
   font-family: 'MuseoModerno', cursive;
-  color: var(--text2);
+  color: var(--text1);
   cursor: pointer;
   display: inline-block;
   padding: 5px;
@@ -1224,7 +1224,7 @@ i.fa-solid .collapsed {
 
 .portfolio .portfolio-flters li:hover,
 .portfolio .portfolio-flters li.filter-active {
-  color: var(--text1);
+  color: var(--text2);
   background: var(--bg1);
   padding: 5px 10px;
   border-radius: 5px;
@@ -1274,7 +1274,7 @@ i.fa-solid .collapsed {
 }
 
 .portfolio .portfolio-wrap .portfolio-info h4 a {
-  color: var(--text2);
+  color: var(--text1);
   transition: 0.3s;
   font-family: 'MuseoModerno', cursive;
 }
@@ -1308,11 +1308,6 @@ i.fa-solid .collapsed {
   background-color: rgba(255, 255, 255, 0.7);
   opacity: 1;
 }
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--color-primary);
-}
-
 .portfolio-details .swiper-button-prev,
 .portfolio-details .swiper-button-next {
   width: 48px;
@@ -1321,8 +1316,8 @@ i.fa-solid .collapsed {
 
 .portfolio-details .swiper-button-prev:after,
 .portfolio-details .swiper-button-next:after {
-  color: rgba(255, 255, 255, 0.8);
-  background-color: rgba(0, 0, 0, 0.2);
+  color: var(--text1);
+  background-color: var(--bg1);
   font-size: 24px;
   border-radius: 50%;
   width: 48px;
@@ -1481,15 +1476,15 @@ iframe {
   padding: 56px;
   border-radius: 10px;
   background: var(--bg1);
-  border-top: 3px solid var(--text2);
-  border-bottom: 3px solid var(--text2);
+  border-top: 3px solid var(--text1);
+  border-bottom: 3px solid var(--text1);
   position: inherit;
 }
 
 .contact .info i {
   font-size: 20px;
   background: var(--bg2);
-  color: var(--text2);
+  color: var(--text1);
   float: left;
   width: 44px;
   height: 44px;
@@ -1505,14 +1500,14 @@ iframe {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: var(--text2);
+  color: var(--text1);
 }
 
 .contact .info p {
   padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 14px;
-  color: var(--text2);
+  color: var(--text3);
   font-family: 'MuseoModerno', cursive;
 }
 
@@ -1524,8 +1519,8 @@ iframe {
 .contact .php-email-form {
   box-shadow: 0px 10px 30px rgb(0 0 0 / 50%);
   width: 100%;
-  border-top: 3px solid var(--text2);
-  border-bottom: 3px solid var(--text2);
+  border-top: 3px solid var(--text1);
+  border-bottom: 3px solid var(--text1);
   background: var(--bg1);
   padding: 20px;
   border-radius: 10px;
@@ -1583,7 +1578,7 @@ iframe {
   font-size: 14px;
   border-radius: 10px;
   background: var(--bg2);
-  border: 2px solid var(--text2);
+  border: 2px solid var(--text1);
   font-family: 'MuseoModerno', cursive;
 }
 
@@ -1611,14 +1606,14 @@ iframe {
   padding: 7px;
   font-size: 13px;
   margin-bottom: 15px;
-  color: var(--text2);
+  color: var(--text1);
   transition: 0.4s;
   border-radius: 10px;
 }
 
 .contact .php-email-form button[type=submit]:hover {
   background: var(--bg1);
-  color: var(--text1);
+  color: var(--text2);
 }
 
 @-webkit-keyframes animate-loading {
@@ -1646,7 +1641,7 @@ iframe {
 --------------------------------------------------------------*/
 footer {
   background: var(--bg1);
-  color: var(--text2);
+  color: var(--text1);
   text-align: center;
 }
 
@@ -1680,8 +1675,8 @@ img.ido {
 }
 
 .wrapper .icon span {
-  color: var(--text2);
-  float: left;
+  color: var(--text1);
+
   width: 30px;
   height: 30px;
   display: flex;
@@ -1694,7 +1689,6 @@ img.ido {
 i.fa-brands {
   color: #ffffff;
   font-size: 20px;
-  float: left;
   width: 100%;
   height: 100%;
   display: flex;
