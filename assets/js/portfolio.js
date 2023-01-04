@@ -303,7 +303,7 @@
       image.src = '/assets/img/beraki.png';
       toggle.innerHTML = '<ion-icon name="sunny"></ion-icon>';
     } else {
-      image.src = '/assets/img/kisuke.png';
+      image.src = '/assets/img/aizen.jpg';
       toggle.innerHTML = '<ion-icon name="moon"></ion-icon>';
     }
     image.onload = () => {
