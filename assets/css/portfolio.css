@@ -709,6 +709,7 @@ section {
 }
 
 .section-title h2 {
+  font-family: var(--font2);
   font-size: 32px;
   font-weight: bold;
   text-transform: uppercase;
@@ -915,7 +916,9 @@ span.typing{
   color: #37517e;
   font-family: "Poppins", sans-serif;
 }
-
+h2.progres {
+  font-family: var(--font2);
+}
 .skills .content ul {
   list-style: none;
   padding: 0;
