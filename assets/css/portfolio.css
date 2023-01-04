@@ -799,7 +799,6 @@ span.typing{
 .why-us .accordion-list li {
   padding: 20px;
   background: var(--bg2);
-  border-radius: 4px;
   border-radius: 10px;
   box-shadow: 0px 10px 30px rgb(0 0 0 / 30%);
 }
@@ -884,12 +883,19 @@ span.typing{
   .why-us .accordion-list {
     padding-bottom: 30px;
   }
+  .bankai{
+    margin-left: 5%;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgb(0 0 0 / 50%);
+  }
 }
 
 @media (max-width: 575px) {
   .why-us .img {
     min-height: 200px;
   }
+    
 }
 
 /*--------------------------------------------------------------
