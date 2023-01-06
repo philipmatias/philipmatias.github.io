@@ -339,7 +339,7 @@
       image.src = "/assets/img/kon.jpg";
       toggle.innerHTML = '<ion-icon name="sunny"></ion-icon>';
     } else {
-      image.src = "/assets/img/suns.png";
+      image.src = "/assets/img/minimal.jpg";
       toggle.innerHTML = '<ion-icon name="moon"></ion-icon>';
     }
     image.onload = () => {

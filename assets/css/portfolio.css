@@ -9,12 +9,12 @@ html {
   --font: 'MuseoModerno', cursive;
   --font2:'Seymour One', sans-serif;
   --font3: 'Nova Flat', cursive;
-  --text1: #1ed760;
+  --text1: #02ee9b;
   --text2: crimson;
   --text3: #ffffff;
   --text4: #ffffff;
-  --bg1: #a12e49;
-  --bg2: #a13686;
+  --bg1: #8c3170;
+  --bg2: #652c5e;
   --background: #121213;
   --progress: #CC33CC;
   --progrez: #1ed75f88;
@@ -22,7 +22,7 @@ html {
 
 .dark-mode {
   --text1: crimson;
-  --text2: #1ed760;
+  --text2: #02ee9b;
    --text3: #ffffff;
    --text4: #000000;
   --bg1: #25273c;
@@ -557,7 +557,7 @@ h6 {
 --------------------------------------------------------------*/
 body {
   transition: background-image 0.5s ease-in-out;
-  background: url(/assets/img/suns.png);
+  background: url(/assets/img/minimal.jpg);
   background-repeat: no-repeat;
   height: 100vh;
   background-size: cover;
