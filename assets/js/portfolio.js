@@ -303,7 +303,7 @@
       image.src = '/assets/img/bans.jpg';
       toggle.innerHTML = '<ion-icon name="sunny"></ion-icon>';
     } else {
-      image.src = '/assets/img/aizen.jpg';
+      image.src = '/assets/img/ws.png';
       toggle.innerHTML = '<ion-icon name="moon"></ion-icon>';
     }
     image.onload = () => {

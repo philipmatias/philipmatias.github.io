@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,200;0,500;0,700;0,900;1,100&family=Open+Sans:wght@300;400;600&family=Roboto:wght@300;400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Nova+Flat&family=Seymour+One&display=swap');
 body {
   color: #444444;
   font-family: 'MuseoModerno', cursive;
@@ -12,6 +12,7 @@ html {
 :root {
   --font: 'MuseoModerno', cursive;
   --font2:'Seymour One', sans-serif;
+  --font3: 'Nova Flat', cursive;
   --text1: #1ed760;
   --text2: crimson;
   --text3: #1c1e21;
@@ -555,7 +556,7 @@ h6 {
 # Hero Section
 --------------------------------------------------------------*/
 body {
-  background: linear-gradient(rgba(0, 0, 0, 0.247), rgba(0, 0, 0, 0.24)), url(/assets/img/aizen.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.24)), url(/assets/img/ws.png);
   background-repeat: no-repeat;
   height: 100vh;
   background-size: cover;
@@ -592,12 +593,13 @@ body {
 }
 
 #hero h1 {
-  font-size: 100px;
-  font-family: 'Seymour One', sans-serif;
+  font-size: 10rem;
+  font-family: var(--font3);
   color: var(--text1);
   animation: glow 1.5s ease-in-out infinite alternate;
 }
 #hero h5{
+  font-family: var(--font3);
   font-size: clamp(0.9375rem, 0.6505rem + 1.2245vw, 1.875rem);
 }
 /* #hero h2 {
@@ -661,7 +663,7 @@ body {
 
 
 #clock {
-  font-family: var(--font2);
+  font-family: var(--font3);
   color: var(--text1);
   position: relative;
   display: flex;
@@ -669,12 +671,6 @@ body {
   text-transform: uppercase;
   font-size: clamp(1.5625rem, 0.3571rem + 5.1429vw, 4.5rem);
   font-weight: 700;
-}
-
-video {
-  border-radius: 10px;
-  width: 62%;
-  height: 250px;
 }
 
 @-webkit-keyframes glow {
