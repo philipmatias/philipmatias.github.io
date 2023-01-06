@@ -316,46 +316,28 @@
       });
     });
   }
+
   //darkmode
-  const toggle = document.getElementById("switch");
-  let isDarkMode = false;
-  toggle.addEventListener("click", () => {
-    isDarkMode = !isDarkMode;
-    document.body.classList.toggle("dark-mode", isDarkMode);
+const toggle = document.getElementById("switch");
+let isDarkMode = false;
+toggle.addEventListener("click", () => {
+  isDarkMode = !isDarkMode;
+  document.body.classList.toggle("dark-mode", isDarkMode);
 
-    // Create a canvas element to draw the image
-    const canvas = document.createElement("canvas");
+  // Load the appropriate image
+  const image = new Image();
+  if (isDarkMode) {
+    image.src = "/assets/img/kon.jpg";
+    toggle.innerHTML = '<ion-icon name="sunny"></ion-icon>';
+  } else {
+    image.src = "/assets/img/minimal.jpg";
+    toggle.innerHTML = '<ion-icon name="moon"></ion-icon>';
+  }
 
-    // Set the canvas size to match the window
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+  // Set the body's background image to the new image
+  document.body.style.backgroundImage = `url(${image.src})`;
+});
 
-    // Get the canvas context
-    const ctx = canvas.getContext("2d");
-
-    // Load the image
-    const image = new Image();
-    if (isDarkMode) {
-      image.src = "/assets/img/kon.jpg";
-      toggle.innerHTML = '<ion-icon name="sunny"></ion-icon>';
-    } else {
-      image.src = "/assets/img/minimal.jpg";
-      toggle.innerHTML = '<ion-icon name="moon"></ion-icon>';
-    }
-    image.onload = () => {
-      // Draw the image on the canvas
-      ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
-
-      // Get the image data from the canvas
-      const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
-
-      // Put the modified image data back on the canvas
-      ctx.putImageData(imageData, 0, 0);
-
-      // Set the body's background image to the canvas
-      document.body.style.backgroundImage = `url(${canvas.toDataURL()})`;
-    };
-  });
   /**
    * Animation on scroll
    */
