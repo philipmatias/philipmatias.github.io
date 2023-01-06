@@ -17,8 +17,8 @@ html {
   --text2: crimson;
   --text3: #1c1e21;
   --text4: #ffffff;
-  --bg1: #E4F0F6;
-  --bg2: #ffffff;
+  --bg2: #E4F0F6;
+  --bg1: #ffffff;
   --background: #121213;
   --progress: #CC33CC;
   --progrez: #1ed75f88;
@@ -596,7 +596,7 @@ body {
   font-size: 10rem;
   font-family: var(--font3);
   color: var(--text1);
-  animation: glow 1.5s ease-in-out infinite alternate;
+  /* animation: glow 1.5s ease-in-out infinite alternate; */
 }
 #hero h5{
   font-family: var(--font3);

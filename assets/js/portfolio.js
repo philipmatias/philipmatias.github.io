@@ -313,6 +313,12 @@
       // Get the image data from the canvas
       const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
 
+      // Darken the image by reducing the brightness of each pixel
+      for (let i = 0; i < imageData.data.length; i += 4) {
+        imageData.data[i] *= 0.7; // Red channel
+        imageData.data[i + 1] *= 0.7; // Green channel
+        imageData.data[i + 2] *= 0.7; // Blue channel
+      }
 
       // Put the modified image data back on the canvas
       ctx.putImageData(imageData, 0, 0);
@@ -339,22 +345,27 @@
 
 //clock
  function updateClock() {
-  var currentTime = new Date();
-  var hours = currentTime.getHours();
-  var minutes = currentTime.getMinutes();
-  var seconds = currentTime.getSeconds();
+   var currentTime = new Date();
+   var hours = currentTime.getHours();
+   var minutes = currentTime.getMinutes();
+   var seconds = currentTime.getSeconds();
 
-  var ampm = "AM";
-  if (hours > 12) {
-    hours -= 12;
-    ampm = "PM";
-  }
+   var ampm = "AM";
+   if (hours > 12) {
+     hours -= 12;
+     ampm = "PM";
+   }
 
-  var timeString = hours + ":" + minutes + ":" + seconds + " " + ampm;
-  document.querySelector('.time').innerHTML = timeString;
-}
+   // Add a leading zero to the minutes if it is less than 10
+   if (minutes < 10) {
+     minutes = "0" + minutes;
+   }
 
-setInterval(updateClock, 1000);
+   var timeString = hours + ":" + minutes + ":" + seconds + " " + ampm;
+   document.querySelector(".time").innerHTML = timeString;
+ }
+
+ setInterval(updateClock, 1000);
 
 
 
