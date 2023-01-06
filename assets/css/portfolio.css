@@ -13,8 +13,8 @@ html {
   --text2: crimson;
   --text3: #ffffff;
   --text4: #ffffff;
-  --bg2: #5d002e;
-  --bg1: #8d002b;
+  --bg1: #a12e49;
+  --bg2: #a13686;
   --background: #121213;
   --progress: #CC33CC;
   --progrez: #1ed75f88;
@@ -557,7 +557,7 @@ h6 {
 --------------------------------------------------------------*/
 body {
   transition: background-image 0.5s ease-in-out;
-  background: url(/assets/img/sun.png);
+  background: url(/assets/img/suns.png);
   background-repeat: no-repeat;
   height: 100vh;
   background-size: cover;
