@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,200;0,500;0,700;0,900;1,100&family=Open+Sans:wght@300;400;600&family=Roboto:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nova+Flat&family=Seymour+One&display=swap');
-body {
-  color: #444444;
-  font-family: 'MuseoModerno', cursive;
-}
 
 html {
   scroll-behavior: smooth;
@@ -168,6 +164,7 @@ h6 {
 }
 
 #header.header-scrolled {
+  transition: background-color 0.5s ease-in-out;
   background-color: var(--bg2);
 }
 
@@ -255,6 +252,7 @@ h6 {
 }
 
 .back-to-top i {
+  transition: color 0.5s ease-in-out;
   font-size: 24px;
   color: var(--text1);
   line-height: 0;
@@ -277,7 +275,7 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  transition: all 0.5s;
+  transition: all 5;
   z-index: 997;
   padding: 15px 0;
 }
@@ -448,7 +446,7 @@ h6 {
   cursor: pointer;
   display: none;
   line-height: 0;
-  transition: 0.5s;
+  transition: 0.3;
 }
 
 .mobile-nav-toggle.bi-x {
@@ -556,6 +554,7 @@ h6 {
 # Hero Section
 --------------------------------------------------------------*/
 body {
+  transition: background-image 0.5s ease-in-out;
   background: linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.24)), url(/assets/img/ws.png);
   background-repeat: no-repeat;
   height: 100vh;
@@ -593,12 +592,14 @@ body {
 }
 
 #hero h1 {
+  transition: color 0.7s ease-in-out;
   font-size: 10rem;
   font-family: var(--font3);
   color: var(--text1);
   /* animation: glow 1.5s ease-in-out infinite alternate; */
 }
 #hero h5{
+    transition: color 0.7s ease-in-out;
   font-family: var(--font3);
   font-size: clamp(0.9375rem, 0.6505rem + 1.2245vw, 1.875rem);
 }
@@ -663,6 +664,7 @@ body {
 
 
 #clock {
+  transition: color 0.7s ease-in-out;
   font-family: var(--font3);
   color: var(--text1);
   position: relative;
@@ -690,6 +692,7 @@ section {
   padding: 45px 0;
   overflow: hidden;
   background-color: var(--bg2);
+  transition: background-color 0.5s ease-in-out;
 }
 
 .section-bg {
@@ -700,9 +703,11 @@ section {
   text-align: center;
   padding-bottom: 30px;
   background-color: var(--bg2);
+  transition: background-color 0.5s ease-in-out;
 }
 
 .section-title h2 {
+  transition: color 0.5s ease-in-out;
   font-family: var(--font2);
   font-size: 40px;
   font-weight: bold;
@@ -725,6 +730,7 @@ section {
 } */
 
 .section-title p {
+  transition: color 0.5s ease-in-out;
   margin-bottom: 0;
   color: var(--text3);
   font-family: 'MuseoModerno', cursive;
@@ -747,6 +753,7 @@ section {
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0px 10px 30px rgb(0 0 0 / 50%);
+  transition: background-color 0.5s ease-in-out;
 }
 /*--------------------------------------------------------------
 # Why Us
@@ -756,12 +763,14 @@ section {
 }
 
 .why-us .content h3 {
+  transition: color 0.5s ease-in-out;
   font-family: 'MuseoModerno', cursive;
   font-weight: 400;
   font-size: 34px;
   color: var(--text3);
 }
 span.typing{
+  transition: color 0.5s ease-in-out;
   color: var(--text1);
   font-size: 34px;
   font-weight: 900;
@@ -775,6 +784,7 @@ span.typing{
 }
 
 .why-us .content p {
+  transition: color 0.5s ease-in-out;
   font-family: 'MuseoModerno', cursive;
   font-size: 15px;
   color: var(--text3);
@@ -800,6 +810,7 @@ span.typing{
 }
 
 .why-us .accordion-list li {
+  transition: background-color 0.5s ease-in-out;
   padding: 20px;
   background: var(--bg2);
   border-radius: 10px;
@@ -807,6 +818,7 @@ span.typing{
 }
 
 .why-us .accordion-list a {
+  transition: color 0.5s ease-in-out;
   display: block;
   position: relative;
   font-family: 'MuseoModerno', cursive;
@@ -820,6 +832,7 @@ span.typing{
 }
 
 .why-us .accordion-list span {
+    transition: color 0.5s ease-in-out;
   color: var(--text2);
   font-weight: 600;
   font-size: 18px;
@@ -828,6 +841,7 @@ span.typing{
 }
 
 .why-us .accordion-list i {
+  transition: background-color 0.5s ease-in-out;
   font-size: 24px;
   background-color: var(--bg1);
   border-radius: 50%;
@@ -837,6 +851,7 @@ span.typing{
 }
 
 .why-us .accordion-list p {
+  transition: color 0.5s ease-in-out;
   margin-bottom: 0;
   padding: 10px 0 0 0;
   color: var(--text3);
@@ -911,13 +926,9 @@ span.typing{
 /*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
-.skills .content h3 {
-  font-weight: 700;
-  font-size: 32px;
-  color: #37517e;
-  font-family: "Poppins", sans-serif;
-}
+
 h2.progres {
+  transition: color 0.5s ease-in-out;
   font-family: var(--font2);
 }
 .skills .content ul {
@@ -941,6 +952,7 @@ h2.progres {
 }
 
 .skills .progress .skill {
+  transition: color 0.5s ease-in-out;
   padding: 0;
   margin: 0 0 6px 0;
   text-transform: uppercase;
@@ -956,6 +968,7 @@ h2.progres {
 }
 
 .skills .progress-bar-wrap {
+  transition: background-color 0.5s ease-in-out;
   background: var(--bg2);
   height: 10px;
   border-radius: 10px;
@@ -963,6 +976,7 @@ h2.progres {
 }
 
 .skills .progress-bar {
+  transition: background-color 0.5s ease-in-out;
   height: 10px;
   transition: 0.9s;
   box-shadow: 3px 0px 11px 2px var(--text1);
@@ -984,6 +998,7 @@ h2.progres {
 }
 
 .faq .faq-list li {
+  transition: background-color 0.5s ease-in-out;
   padding: 20px;
   background: var(--bg1);
   border-radius: 10px;
@@ -992,6 +1007,7 @@ h2.progres {
 }
 
 .faq .faq-list a {
+  transition: color 0.5s ease-in-out;
   display: block;
   position: relative;
   font-family: 'MuseoModerno', cursive;
@@ -1010,6 +1026,7 @@ i.fa-solid {
   right: 0;
   left: 20px;
   color: var(--text1);
+  transition: color 0.5s ease-in-out;
 }
 
 .faq .faq-list .icon-show,
@@ -1018,11 +1035,13 @@ i.fa-solid {
   position: absolute;
   right: 0;
   top: 0;
+  transition: background-color 0.5s ease-in-out;
   background-color: var(--bg2);
   border-radius: 50%;
 }
 
 .faq .faq-list p {
+  transition: color 0.5s ease-in-out;
   margin-bottom: 0;
   padding: 10px 0 0 0;
   font-family: 'MuseoModerno', cursive;
@@ -1109,11 +1128,9 @@ i.fa-solid .collapsed {
   transform: translateY(-10px);
 }
 
-.services .icon-box:hover h4 a {
-  color: #47b2e4;
-}
 
 .skills-content{
+  transition: background-color 0.5s ease-in-out;
   margin-left: 10%;
     width: 80%;
     background-color: var(--bg1);
@@ -1204,6 +1221,7 @@ i.fa-solid .collapsed {
 }
 
 .portfolio .portfolio-flters li {
+  transition: color 0.5s ease-in-out;
   font-family: 'MuseoModerno', cursive;
   color: var(--text1);
   cursor: pointer;
@@ -1254,6 +1272,7 @@ i.fa-solid .collapsed {
 }
 
 .portfolio .portfolio-wrap .portfolio-info {
+  transition: background-color 0.5s ease-in-out;
   padding: 25px 20px;
   background-color: var(--bg1);
   position: relative;
@@ -1465,7 +1484,8 @@ iframe {
 }
 
 .contact .info {
-    box-shadow: 0px 10px 30px rgb(0 0 0 / 50%);
+  transition: background-color 0.5s ease-in-out;
+  box-shadow: 0px 10px 30px rgb(0 0 0 / 50%);
   width: 100%;
   padding: 56px;
   border-radius: 10px;
@@ -1490,6 +1510,7 @@ iframe {
 }
 
 .contact .info h4 {
+  transition: color 0.5s ease-in-out;
   padding: 0 0 0 60px;
   font-size: 22px;
   font-weight: 600;
@@ -1498,6 +1519,7 @@ iframe {
 }
 
 .contact .info p {
+  transition: color 0.5s ease-in-out;
   padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 14px;
@@ -1511,6 +1533,7 @@ iframe {
 }
 
 .contact .php-email-form {
+  transition: background-color 0.5s ease-in-out;
   box-shadow: 0px 10px 30px rgb(0 0 0 / 50%);
   width: 100%;
   border-top: 3px solid var(--text1);
@@ -1573,6 +1596,7 @@ iframe {
   border-radius: 10px;
   background: var(--bg2);
   border: 2px solid var(--text1);
+  transition: background-color 0.5s ease-in-out;
   font-family: 'MuseoModerno', cursive;
 }
 
@@ -1634,6 +1658,7 @@ iframe {
 # Footer
 --------------------------------------------------------------*/
 footer {
+  transition: background-color 0.5s ease-in-out;
   background: var(--bg1);
   color: var(--text1);
   text-align: center;
@@ -1670,7 +1695,7 @@ img.ido {
 
 .wrapper .icon span {
   color: var(--text1);
-
+  transition: color 0.5s ease-in-out;
   width: 30px;
   height: 30px;
   display: flex;
@@ -1743,6 +1768,7 @@ i.fa-brands.fa-github {
 
 .custom-shape-divider-bottom-1672315905 .shape-fill {
   fill: var(--bg2);
+  transition: fill 0.5s ease-in-out;
 }
 
 @media (max-width: 768px) {

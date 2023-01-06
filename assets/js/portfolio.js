@@ -360,6 +360,9 @@
    if (minutes < 10) {
      minutes = "0" + minutes;
    }
+   if (seconds < 10) {
+      seconds = "0" + seconds;
+   }
 
    var timeString = hours + ":" + minutes + ":" + seconds + " " + ampm;
    document.querySelector(".time").innerHTML = timeString;
