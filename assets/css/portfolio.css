@@ -262,6 +262,9 @@ h6 {
 .back-to-top:hover {
   background-color: var(--text1);
 }
+.back-to-top i:hover {
+  color: var(--text2);
+}
 
 
 .back-to-top.active {
@@ -564,12 +567,7 @@ body {
   background-size: cover;
   position: relative;
 }
-#hero img{
-  width: 10%;
-  height: 17%;
-  border-radius: 50%;
-  border: 6px var(--text1) solid;
-}
+
 #hero:before {
   content: "";
   background: rgba(0, 0, 0, 0.363);
@@ -594,7 +592,7 @@ body {
 }
 
 #hero h1 {
-  font-size: 80px;
+  font-size: 100px;
   font-family: 'Seymour One', sans-serif;
   color: var(--text1);
   animation: glow 1.5s ease-in-out infinite alternate;
@@ -710,14 +708,14 @@ section {
 
 .section-title h2 {
   font-family: var(--font2);
-  font-size: 32px;
+  font-size: 40px;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
 }
-
+/* 
 .section-title h2::after {
   content: "";
   position: absolute;
@@ -728,7 +726,7 @@ section {
   bottom: 0;
   box-shadow: 3px 0px 10px 2px var(--text1);
   left: calc(50% - 10%);
-}
+} */
 
 .section-title p {
   margin-bottom: 0;
