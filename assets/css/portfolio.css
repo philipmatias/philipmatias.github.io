@@ -598,12 +598,14 @@ body {
   font-size: 9.5rem;
   font-family: var(--font3);
   color: var(--text1);
+  text-shadow: 3px 3px 3px rgba(0,0,0,0.5);
   /* animation: glow 1.5s ease-in-out infinite alternate; */
 }
 #hero h5{
     transition: color 0.7s ease-in-out;
   font-family: var(--font3);
   font-size: clamp(0.9375rem, 0.6505rem + 1.2245vw, 1.875rem);
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
 }
 /* #hero h2 {
   color: var(--text2);
@@ -675,6 +677,7 @@ body {
   text-transform: uppercase;
   font-size: clamp(1.5625rem, 0.3571rem + 5.1429vw, 4.5rem);
   font-weight: 700;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
 }
 
 @-webkit-keyframes glow {
@@ -709,6 +712,7 @@ section {
 }
 
 .section-title h2 {
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
   transition: color 0.5s ease-in-out;
   font-family: var(--font2);
   font-size: 40px;
@@ -772,6 +776,7 @@ section {
   color: var(--text3);
 }
 span.typing{
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
   transition: color 0.5s ease-in-out;
   color: var(--text1);
   font-size: 34px;
@@ -820,6 +825,7 @@ span.typing{
 }
 
 .why-us .accordion-list a {
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
   transition: color 0.5s ease-in-out;
   display: block;
   position: relative;
@@ -930,6 +936,7 @@ span.typing{
 --------------------------------------------------------------*/
 
 h2.progres {
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
   transition: color 0.5s ease-in-out;
   font-family: var(--font2);
 }
@@ -1057,7 +1064,7 @@ i.fa-solid {
 .faq .faq-list a.collapsed {
   color: var(--text1);
   transition: 0.3s;
-  
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 i.fa-solid .collapsed {
@@ -1292,6 +1299,7 @@ i.fa-solid .collapsed {
   color: var(--text1);
   transition: 0.3s;
   font-family: 'MuseoModerno', cursive;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 .portfolio .portfolio-wrap .portfolio-info h4 a:hover {
@@ -1531,6 +1539,7 @@ iframe {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 5px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -1684,6 +1693,7 @@ footer span a:hover {
 }
 
 .idoo {
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -1734,7 +1744,6 @@ i.fa-brands.fa-facebook-f {
   background: -moz-linear-gradient(top, #3e6ccf, #3e6ac7);
   background: -ms-linear-gradient(top, #4372da, #255ed8);
   background: -webkit-linear-gradient(top, #2f62d1, #2f59b3);
-  border: 1px solid #2b4170;
 }
 
 i.fa-brands.fa-instagram {
