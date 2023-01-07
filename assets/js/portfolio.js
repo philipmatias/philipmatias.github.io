@@ -318,25 +318,24 @@
   }
 
   //darkmode
-const toggle = document.getElementById("switch");
-let isDarkMode = false;
-toggle.addEventListener("click", () => {
-  isDarkMode = !isDarkMode;
-  document.body.classList.toggle("dark-mode", isDarkMode);
+  const toggle = document.getElementById("switch");
+  let isDarkMode = false;
+  toggle.addEventListener("click", () => {
+    isDarkMode = !isDarkMode;
+    document.body.classList.toggle("dark-mode", isDarkMode);
 
-  // Load the appropriate image
-  const image = new Image();
-  if (isDarkMode) {
-    image.src = "/assets/img/kon.jpg";
-    toggle.innerHTML = '<ion-icon name="sunny"></ion-icon>';
-  } else {
-    image.src = "/assets/img/minimal.jpg";
-    toggle.innerHTML = '<ion-icon name="moon"></ion-icon>';
-  }
-
-  // Set the body's background image to the new image
-  document.body.style.backgroundImage = `url(${image.src})`;
-});
+    // Load the appropriate image
+    const image = new Image();
+    if (isDarkMode) {
+      image.src = "/assets/img/kon.jpg";
+      toggle.innerHTML = '<ion-icon name="sunny"></ion-icon>';
+    } else {
+      image.src = "/assets/img/minimal.jpg";
+      toggle.innerHTML = '<ion-icon name="moon"></ion-icon>';
+    }
+    // Set the body's background image to the new image
+    document.body.style.backgroundImage = `url(${image.src})`;
+  });
 
   /**
    * Animation on scroll
