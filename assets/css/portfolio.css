@@ -721,15 +721,7 @@ body {
       1px 30px 60px rgba(16, 16, 16, 0.4);
 }
 
-@-webkit-keyframes glow {
-  from {
-    text-shadow: 0 0 5px var(--text1), 0 0 10px var(--text1), 0 0 20px var(--bg1);
-  }
 
-  to {
-    /* text-shadow: 0 0 5px var(--text1), 0 0 10px var(--text2), 0 0 15px var(--text1); */
-  }
-}
 
 /*--------------------------------------------------------------
 # Sections General
