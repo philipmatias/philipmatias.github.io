@@ -330,7 +330,7 @@
       image.src = "/assets/img/kon.jpg";
       toggle.innerHTML = '<ion-icon name="sunny"></ion-icon>';
     } else {
-      image.src = "/assets/img/minimal.jpg";
+      image.src = "/assets/img/wiws.jpg";
       toggle.innerHTML = '<ion-icon name="moon"></ion-icon>';
     }
     // Set the body's background image to the new image
