@@ -328,7 +328,7 @@
     const image = new Image();
     if (isDarkMode) {
       image.src = "/assets/img/kon.jpg";
-      toggle.innerHTML = '<ion-icon name="sunny"></ion-icon>';
+      toggle.innerHTML = '<ion-icon name="snow"></ion-icon>';
     } else {
       image.src = "/assets/img/wiws.jpg";
       toggle.innerHTML = '<ion-icon name="moon"></ion-icon>';
