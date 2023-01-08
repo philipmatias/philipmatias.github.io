@@ -1,6 +1,6 @@
 
 
-(function() {
+(function () {
   ("use strict");
 
   /**
@@ -328,7 +328,7 @@
     const image = new Image();
     if (isDarkMode) {
       image.src = "/assets/img/kon.jpg";
-      toggle.innerHTML = '<ion-icon name="snow"></ion-icon>';
+      toggle.innerHTML = '<ion-icon name="sunny-sharp"></ion-icon>';
     } else {
       image.src = "/assets/img/wiws.jpg";
       toggle.innerHTML = '<ion-icon name="moon"></ion-icon>';
@@ -337,6 +337,8 @@
     document.body.style.backgroundImage = `url(${image.src})`;
   });
 
+
+  
   /**
    * Animation on scroll
    */
@@ -348,7 +350,8 @@
       mirror: false,
     });
   });
-})()
+})();
+
 
 //clock
  function updateClock() {
