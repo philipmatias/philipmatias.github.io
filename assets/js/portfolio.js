@@ -355,8 +355,7 @@
    var currentTime = new Date();
    var hours = currentTime.getHours();
    var minutes = currentTime.getMinutes();
-   var seconds = currentTime.getSeconds();
-
+   
    var ampm = "AM";
    if (hours > 12) {
      hours -= 12;
@@ -367,11 +366,9 @@
    if (minutes < 10) {
      minutes = "0" + minutes;
    }
-   if (seconds < 10) {
-      seconds = "0" + seconds;
-   }
 
-   var timeString = hours + ":" + minutes + ":" + seconds + " " + ampm;
+
+   var timeString = hours + ":" + minutes + ":"+ ampm;
    document.querySelector(".time").innerHTML = timeString;
  }
 
