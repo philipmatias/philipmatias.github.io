@@ -358,6 +358,9 @@
    var currentTime = new Date();
    var hours = currentTime.getHours();
    var minutes = currentTime.getMinutes();
+   var day = currentTime.getDate();
+   var month = currentTime.getMonth() + 1; // returns a number between 1 and 12
+   var year = currentTime.getFullYear();
    
    var ampm = "AM";
    if (hours > 12) {
@@ -369,10 +372,15 @@
    if (minutes < 10) {
      minutes = "0" + minutes;
    }
+   
+   // Add a leading zero to the month if it is less than 10
+   if (month < 10) {
+     month = "0" + month;
+   }
 
-
-   var timeString = hours + ":" + minutes + ":"+ ampm;
+   var timeString = month+"/"+day+"/"+year+" "+ hours + ":" + minutes + ":"+ ampm;
    document.querySelector(".time").innerHTML = timeString;
  }
 
  setInterval(updateClock, 1000);
+
